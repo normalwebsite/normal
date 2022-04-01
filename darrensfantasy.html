@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<div class="js">
+  
+</div>
+<script>
+	function myFunction() {
+  location.replace("hack.html");
+}
+setTimeout(myFunction, 5000);
+</script>
+<!--END: HTML element-->
+<style>
+	.js div#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #333 url('https://svgshare.com/i/TGi.svg') no-repeat center center;
+}
+
+</style>
+<script>
+	// requires jquery
+
+jQuery(document).ready(function($) {  
+
+$(window).load(function(){
+	$('#preloader').fadeOut('slow',function(){$(this).remove();});
+});
+
+});
+</script>
