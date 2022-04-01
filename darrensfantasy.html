@@ -2,13 +2,7 @@
 <div class="js">
   
 </div>
-<script>
-	function myFunction() {
-  location.replace("hack.html");
-}
-setTimeout(myFunction, 5000);
-</script>
-<!--END: HTML element-->
+
 <style>
 	.js div#preloader {
   position: fixed;
@@ -23,13 +17,14 @@ setTimeout(myFunction, 5000);
 
 </style>
 <script>
-	// requires jquery
-
-jQuery(document).ready(function($) {  
-
-$(window).load(function(){
-	$('#preloader').fadeOut('slow',function(){$(this).remove();});
-});
-
-});
+	function myFunction() {
+  location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+}
+setTimeout(myFunction, 5000);
 </script>
+<div class="js"><!--this is supposed to be on the HTML element but codepen won't let me do it, put this class on your HTML element-->
+  <body>
+    <div id="preloader"></div>
+    
+  
+</div><!--END: HTML element-->
